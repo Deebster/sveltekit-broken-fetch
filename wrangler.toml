@@ -1,0 +1,10 @@
+name = "sveltekit-broken-fetch"
+account_id = "06aa0ca3aaa2cb96edb29d2845b0dced"
+compatibility_date = "2022-09-19"
+
+main = "./.cloudflare/worker.js"
+site.bucket = "./.cloudflare/public"
+
+build.command = "npm run build"
+
+workers_dev = true
