@@ -5,5 +5,10 @@ declare namespace App {
 	// interface Locals {}
 	// interface PageData {}
 	// interface PageError {}
-	// interface Platform {}
+	interface Platform {
+		context: {
+			waitUntil(promise: Promise<any>): void;
+		};
+		caches: CacheStorage & { default: Cache };
+	}
 }
